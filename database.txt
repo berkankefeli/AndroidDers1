@@ -1,0 +1,21 @@
+CREATE TABLE "Uyeler" (
+	"ID"	INTEGER PRIMARY KEY AUTOINCREMENT,
+	"Ad"	VARCHAR(75),
+	"Soyad"	VARCHAR(75),
+	"Cinsiyet"	NVARCHAR(1),
+	"dogum_yili"	INTEGER(4),
+	"email"	VARCHAR(75)
+);
+
+
+DELETE from Uyeler where id=2
+
+UPDATE Uyeler set email = 'hasann@g' where id = 2
+
+
+Üye ekleme
+
+INSERT into Uyeler
+(Ad,Soyad,Cinsiyet,dogum_yili,email)
+VALUES
+('Hasan','UZUNTAÞ','E',1998,'hasanuzuntas@gmail.com')
